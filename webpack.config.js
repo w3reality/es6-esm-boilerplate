@@ -12,19 +12,20 @@ const Var2EsmPlugin = require('webpack-var2esm-plugin');
 let libraryName = 'my-module'; // pkg.name;
 let libraryObjName = 'MyModule'; // name for ES module
 let plugins = [], outputFile, minimize;
+let isCompat = env.endsWith(':compat');
 
-if (env === 'build') {
+if (env.startsWith('min')) {
     minimize = true;
-    outputFile = libraryName  + '.esm.min.js';
+    outputFile = `${libraryName}${isCompat ? '.compat' : ''}.min.js`;
     if (0) {
         plugins.push(new BundleAnalyzerPlugin());
     }
 } else {
     minimize = false;
-    outputFile = libraryName + '.esm.js';
+    outputFile = `${libraryName}${isCompat ? '.compat' : ''}.js`;
 }
 
-plugins.push(new Var2EsmPlugin(libraryObjName, outputFile));
+plugins.push(new Var2EsmPlugin(libraryObjName, outputFile, isCompat));
 const target = 'var';
 
 const config = {
