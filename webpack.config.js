@@ -26,7 +26,7 @@ if (env.startsWith('min')) {
 }
 
 plugins.push(new Var2EsmPlugin(libraryObjName, outputFile, isCompat));
-const target = 'var';
+const target = 'var'; // libraryTarget MUST be 'var' for Var2EsmPlugin to work.
 
 const config = {
     entry: __dirname + '/src/index.js',
