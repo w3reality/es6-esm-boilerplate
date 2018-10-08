@@ -20,13 +20,15 @@ How-to
    │   ├── Bar.js                  # subclass of Base
    │   ├── index.js                # module implementation (export { Foo, Bar })
    │
-   ├── lib                         # ES5 output
-   │   ├── my-module.esm.js        # esm module
-   │   ├── my-module.esm.min.js    # esm module minified
+   ├── lib                         # esm output
+   │   ├── my-module.js            # module
+   │   ├── my-module.min.js        # module minified
+   │   ├── my-module.compat.js     # module (ES5-compatibility)
+   │   ├── my-module.compat.min.js # module (ES5-compatibility) minified
 
 **Build**
    
 .. code::
 
    $ npm install  # set up build tools
-   $ npm run build  # get ES5 module output in lib/ (transpiled by Babel)
+   $ npm run build  # get esm output in lib/ by Babel
