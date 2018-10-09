@@ -48,6 +48,13 @@ script-tag loading, Node-require, and AMD compatibilities.
 All the "var-to-esm transformation" is performed by a tiny Webpack plugin called
 `webpack-var2esm-plugin <https://github.com/w3reality/webpack-var2esm-plugin/blob/master/src/index.js>`__.
 
+Demo
+----
+
+- `examples/latest-browsers <https://w3reality.github.io/es6-esm-boilerplate/examples/latest-browsers/index.html>`__ (`source code <https://github.com/w3reality/es6-esm-boilerplate/tree/master/examples/latest-browsers>`__)
+- `examples/script-tag <https://w3reality.github.io/es6-esm-boilerplate/examples/script-tag/index.html>`__ (`source code <https://github.com/w3reality/es6-esm-boilerplate/tree/master/examples/script-tag>`__)
+- `examples/amd <https://w3reality.github.io/es6-esm-boilerplate/examples/amd/index.html>`__ (`source code <https://github.com/w3reality/es6-esm-boilerplate/tree/master/examples/amd>`__)
+- `examples/babel <https://w3reality.github.io/es6-esm-boilerplate/examples/babel/dist/index.html>`__ (`source code <https://github.com/w3reality/es6-esm-boilerplate/tree/master/examples/babel>`__)
 
 Build
 -----
