@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <script type="module">
+        import MyModule from '../../dist/my-module.js';
+//        import MyModule from '../dist/lib/my-module.min.js';
+
+        console.log('MyModule:', MyModule);
+        let foo = new MyModule.Foo(true);
+        let bar = new MyModule.Bar(true);
+        foo.hello();
+        bar.hello();
+    </script>
+
+    <h1>examples/latest-browsers</h1>
+    <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import#Browser_compatibility">Browser compatibility of ES Module import</a></p>
+    <p>Open JavaScript Console to view MyModule</p>
+</body>
+</html>

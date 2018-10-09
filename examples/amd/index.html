@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <script src='./require.js'></script>
+    <script type="text/javascript">
+    var module = '../../dist/my-module.compat.js';
+    //var module = '../../dist/my-module.compat.min.js';
+    require([module], function (MyModule) {
+        console.log(MyModule);
+        var foo = new MyModule.default.Foo(true);
+        var bar = new MyModule.default.Bar(true);
+        foo.hello();
+        bar.hello();
+    });
+    </script>
+
+    <h1>examples/amd</h1>
+    <p>Open JavaScript Console to view MyModule</p>
+</body>
+</html>

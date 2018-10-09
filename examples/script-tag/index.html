@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <script type="text/javascript" src="../../dist/my-module.compat.js"></script>
+    <!--<script type="text/javascript" src="../../dist/my-module.compat.min.js"></script>-->
+
+    <script>
+        console.log('MyModule:', MyModule);
+        let foo = new MyModule.default.Foo(true);
+        let bar = new MyModule.default.Bar(true);
+        foo.hello();
+        bar.hello();
+    </script>
+
+    <h1>examples/script-tag</h1>
+    <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import#Browser_compatibility">Browser compatibility of ES Module import</a></p>
+    <p>Open JavaScript Console to view MyModule</p>
+</body>
+</html>
