@@ -1,6 +1,6 @@
 {
     "name": "es6-esm-boilerplate",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "Build ES modules from ES6 source code",
     "main": "dist/my-module.esm.js",
     "directories": {
