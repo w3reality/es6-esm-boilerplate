@@ -60,5 +60,6 @@ Build
 
 .. code::
 
+   # git clone and cd to this repo, then
    $ npm install  # set up build tools
    $ npm run build  # get ES module output in lib/ by Babel
