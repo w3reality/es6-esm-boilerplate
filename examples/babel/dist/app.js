@@ -77,6 +77,8 @@ var _myModule2 = _interopRequireDefault(_myModule);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 //import MyModule from '../../../dist/my-module.min.js'; 
+//import MyModule from '../../../dist/my-module.compat.js'; 
+//import MyModule from '../../../dist/my-module.compat.min.js'; 
 
 console.log('MyModule:', _myModule2.default);
 var foo = new _myModule2.default.Foo(true);
