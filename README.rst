@@ -40,9 +40,8 @@ First, bundle ES6 source code into a var-module.  Then, export the var-module us
 ES Module's ``export`` syntax to finally get ``my-module.js``.  This module file can be directly
 consumed on `relatively new browsers <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import#Browser_compatibility>`__.  
 
-For compatibility with older browsers, development with Babel, and NodeJS,
-we also build ``my-module.compat.js``.  This module
-file conforms to the `UMD <https://github.com/umdjs/umd>`__ patterns that provide the
+we also build ``my-module.compat.js`` for compatibility with older browsers, development with Babel,
+and NodeJS.  This module file conforms to the `UMD <https://github.com/umdjs/umd>`__ patterns that provide the
 script-tag loading, Node-require, and AMD compatibilities.
 
 All the "var-to-esm transformation" is performed by a tiny Webpack plugin called
