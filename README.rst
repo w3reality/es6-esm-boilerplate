@@ -1,7 +1,12 @@
 es6-esm-boilerplate
 ===================
 
-Build ES modules from ES6 source code.
+Build ES modules from ES6 source code with Webpack.
+
+Starting with this boilerplate, we can develop simple-to-complex
+ES Modules targeting the latest browsers, development with Babel, and
+Node runtime. At the same time, the ES5-compatible build is also generated.
+
 
 Input/output structure
 ----------------------
