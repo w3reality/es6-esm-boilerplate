@@ -33,8 +33,8 @@ How it works
 
 .. code::
 
-   ES6 source code             -> var-module             -> my-module.js (export default MyModule;)
-   {Base, Foo, Bar, index}.js     (var MyModule = ...;)  -> my-module.compat.js (UMD)
+   ES6 source code          -> var-module             -> my-module.js (export default MyModule;)
+   {Base,Foo,Bar,index}.js     (var MyModule = ...;)  -> my-module.compat.js (UMD)
 
 First, bundle ES6 source code into a var-module.  Then, export the var-module using the
 ES Module's ``export`` syntax to finally get ``my-module.js``.  This module file can be directly
