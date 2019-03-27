@@ -5,8 +5,12 @@ Build ES modules from ES6 source code with Webpack.
 
 Starting with this boilerplate, we can develop simple-to-complex
 ES Modules targeting the latest browsers, development with Babel, and
-Node runtime. At the same time, the ES5-compatible build is also generated.
+Node runtime. At the same time, the ES5-compatible build is also generated for convenience.
 
+(Why we do this?  This module building pattern shines especially when we deal with the NPM module ecosystem.
+Webpack's ability to bundle any format of NPM modules listed in ``package.json`` just using ``require()`` should never be
+underestimated.  This way, we can export whatever combination of existing NPM modules wrapped as an ES module; and
+we can consume them by simply ``import``-ing the ES module while keeping our code base ES6-based.)
 
 Input/output structure
 ----------------------
