@@ -8,8 +8,8 @@ ES Modules targeting the latest browsers, development with Babel, and
 Node runtime. At the same time, the ES5-compatible build is also generated for convenience.
 
 (Why we do this?  This module building pattern shines especially when we deal with the NPM module ecosystem.
-Webpack's ability to bundle any format of NPM modules listed in ``package.json`` just using ``require()`` should never be
-underestimated.  This way, we can export whatever combination of existing NPM modules wrapped as an ES module; and
+Webpack can bundle any NPM modules listed in ``package.json`` just using ``require()`` regardless of module types.
+So, with Webpack, we can expose whatever combination of existing NPM modules wrapped as an ES module; and
 we can consume them by simply ``import``-ing the ES module while keeping our code base ES6-based.)
 
 Input/output structure
@@ -44,8 +44,8 @@ First, bundle ES6 source code into a var-module.  Then, export the var-module us
 ES Module's ``export`` syntax to finally get ``my-module.js``.  This module file can be directly
 consumed on `relatively new browsers <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import#Browser_compatibility>`__.  
 
-we also build ``my-module.compat.js`` for compatibility with older browsers, development with Babel,
-and NodeJS.  This module file conforms to the `UMD <https://github.com/umdjs/umd>`__ patterns that provide the
+We also build ``my-module.compat.js`` for compatibility with older browsers, development with Babel,
+and NodeJS.  This module output conforms to the `UMD <https://github.com/umdjs/umd>`__ patterns that provide the
 script-tag loading, Node-require, and AMD compatibilities.
 
 All the "var-to-esm transformation" is performed by a tiny Webpack plugin called
