@@ -35,7 +35,6 @@
     "homepage": "https://github.com/w3reality/es6-esm-boilerplate",
     "dependencies": {},
     "devDependencies": {
-        "babel-cli": "^6.26.0",
         "babel-core": "^6.26.0",
         "babel-eslint": "^8.0.3",
         "babel-loader": "^7.1.2",
