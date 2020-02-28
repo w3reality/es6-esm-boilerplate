@@ -10,8 +10,8 @@ Node runtime. At the same time, the ES5-compatible build is also generated for c
 Why we do this?
 
 This module building pattern shines especially when we deal with the NPM module ecosystem.
-Webpack can bundle any NPM modules listed in ``package.json`` just using ``require()`` regardless of module types.
-So, with Webpack, we can expose whatever combination of existing NPM modules wrapped as an ES module; and
+Webpack can bundle any NPM dependencies listed in ``package.json`` regardless of their module types.
+So, with Webpack, we can expose any combination of existing NPM packages wrapped as an ES module; and
 we can consume them by simply ``import``-ing the ES module while keeping our code base ES6-based.
 
 Input/output structure
